@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    @Test void treeHasNodes() {
+        AVLtree tree = new AVLtree();
+        tree.insert(1);
+        assertNotNull(tree.serialize());
     }
 }
